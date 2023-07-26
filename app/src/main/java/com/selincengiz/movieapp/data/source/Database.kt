@@ -1,6 +1,7 @@
 package com.selincengiz.movieapp.data.source
 
 import android.graphics.Bitmap
+import android.util.Log
 import com.selincengiz.movieapp.data.model.Film
 
 object Database {
@@ -34,7 +35,14 @@ object Database {
 
     fun removeFilm(film: Film) = filmList.remove(film)
 
-    fun updateFilm(index: Int, film: Film) = filmList.set(index, film)
+    fun updateFilm(index: Int, film: Film) {
+        Log.i("ilkhal", filmList.get(index).isWatched.toString())
+        Log.i("updated",film.isWatched.toString())
+
+        filmList.set(index, film)
+        isWatched()
+        Log.i("sonhal",filmList.get(index).isWatched.toString())
+    }
 
     /////////////////////////////////////////////////////////////
 

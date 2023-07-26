@@ -32,17 +32,16 @@ class FilmAdapter(
                 checkBox.isChecked = film.isWatched
                 imageView.setImageBitmap(film.image)
 
-                checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
+                checkBox.setOnClickListener {
                     var updatedFilm = Film(
                         id = film.id,
                         title = film.title,
                         description = film.description,
-                        isWatched = isChecked,
+                        isWatched = !film.isWatched,
                         image = film.image,
                         date = film.date
                     )
                     Database.updateFilm(Database.getFilmIndex(film), updatedFilm)
-                    Database.isWatched()
                     onCheckedChange()
 
                 }
@@ -59,7 +58,8 @@ class FilmAdapter(
     fun updateList(list: List<Film>) {
         filmList.clear()
         filmList.addAll(list)
-        notifyItemRangeChanged(0, list.size)
+        notifyDataSetChanged()
+        //notifyItemRangeChanged(0, list.size)
 
 
 
