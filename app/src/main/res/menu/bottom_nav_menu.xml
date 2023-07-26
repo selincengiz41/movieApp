@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/watchListFragment"
+        android:icon="@drawable/watched_icon"
+        android:title="Watch now"></item>
+
+    <item
+        android:id="@+id/watchedListFragment"
+        android:icon="@drawable/watch_icon"
+        android:title="Already watched"></item>
+</menu>

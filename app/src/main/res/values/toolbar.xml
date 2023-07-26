@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomToolbarTitle" parent="Widget.AppCompat.Toolbar">
+
+        <!-- Başlık fontu için fontFamily özelliği -->
+        <item name="android:fontFamily">@font/retro</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+
+    </style>
+</resources>
