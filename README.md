@@ -1,6 +1,6 @@
 # movieApp
 
-This is an application where movies to watch and movies watched can be listed. User can add and list movies.
+This is an application where movies to watch and  watched can be listed. User can add and list movies.
 
 ## Watch List 
 
