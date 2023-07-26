@@ -1,5 +1,7 @@
 # movieApp
 
+This is an application where movies to watch and movies watched can be listed. User can add and list movies.
+
 ## Watch List 
 
 ![WhatsApp Image 2023-07-26 at 17 31 48](https://github.com/selincengiz41/movieApp/assets/60012262/e956fa88-a349-404e-8952-e52b55ee01ca)   <---------------->       ![yeni2](https://github.com/selincengiz41/movieApp/assets/60012262/25711d9d-89d6-4847-b7e8-f056f07eca22)
