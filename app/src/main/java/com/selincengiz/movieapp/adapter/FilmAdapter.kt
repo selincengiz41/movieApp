@@ -44,7 +44,7 @@ class FilmAdapter(
                     Database.updateFilm(Database.getFilmIndex(film), updatedFilm)
                     Database.isWatched()
                     onCheckedChange()
-                    notifyItemChanged(position)
+
                 }
 
                 imageView.setOnClickListener {
@@ -60,6 +60,7 @@ class FilmAdapter(
         filmList.clear()
         filmList.addAll(list)
         notifyItemRangeChanged(0, list.size)
+
 
 
     }
